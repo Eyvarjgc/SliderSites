@@ -73,7 +73,7 @@ const { devName, websiteDescription, websiteLink, websiteTitle, backgroundImg, s
       const img = document.createElement('img');
       img.src = item.backgroundImg;
       img.alt = item.websiteTitle;
-      img.classList.add('slider-image', 'cursor-pointer', 'rounded-3xl', 'w-56', 'h-32', 'opacity-70', 'hover:opacity-100', 'transition-all');
+      img.classList.add('slider-image', 'cursor-pointer', 'rounded-3xl', 'w-56', 'h-32', 'opacity-90', 'hover:opacity-100', 'transition-all');
       img.dataset.index = counter + index;
       img.addEventListener('click', () => changeSlide(counter + index));
       slider.appendChild(img);

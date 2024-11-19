@@ -6,10 +6,11 @@ interface Props {
   websiteLink: string;
   backgroundImg: string;
   subtitle: string;
+  font:string;
 }
 
 
-const {devName, websiteTitle, websiteDescription,websiteLink, backgroundImg, subtitle} = Astro.props
+const {devName, websiteTitle, websiteDescription,websiteLink, backgroundImg, subtitle,font} = Astro.props
 ---
 
 <!-- <div class=`bg-[url(./${backgroundImg}.png)] backgroundImage`> -->
@@ -18,7 +19,7 @@ const {devName, websiteTitle, websiteDescription,websiteLink, backgroundImg, sub
 
 
   <span class="opacityLayer"></span>
-  <div class="text-white flex flex-col gap-4  z-50 fixed ml-24 bottom-56 ">
+  <div class=`text-white flex flex-col gap-4  z-50 fixed ml-24 bottom-56 `>
     
     
     <h1 class="font-thin  text-3xl ">Dev - <span id="devName">{devName}</span> </h1>
@@ -46,7 +47,7 @@ const {devName, websiteTitle, websiteDescription,websiteLink, backgroundImg, sub
 		width: 100vw;
 		height: 100vh;
     
-		background-color: rgba(0, 0, 0, 0.731);
+		background-color: rgba(0, 0, 0, 0.605);
 		z-index: 20;
 		position: fixed;
 	}

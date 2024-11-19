@@ -35,7 +35,15 @@ const { devName, websiteDescription, websiteLink, websiteTitle, backgroundImg, s
 <script>
   import items from '../Info.json';
 
+
+
   let counter = 0; 
+
+  setInterval(() =>{
+  console.log('delay');
+  counter = (counter + 1) % items.length;
+  changeSlide(counter)
+}, 3000);
 
   function changeSlide(index) {
     const selectedItem = items[index];
@@ -50,7 +58,7 @@ const { devName, websiteDescription, websiteLink, websiteTitle, backgroundImg, s
       document.getElementById("websiteLink").href = selectedItem.websiteLink;
     }
 
-    counter = Math.max(0, index - 1); 
+    // counter = Math.max(0, index - 1); 
     updateSlider();
   }
 

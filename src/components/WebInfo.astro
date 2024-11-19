@@ -1,0 +1,53 @@
+---
+interface Props {
+  devName: string;
+  websiteTitle: string;
+  websiteDescription: string;
+  websiteLink: string;
+  backgroundImg: string;
+  subtitle: string;
+}
+
+
+const {devName, websiteTitle, websiteDescription,websiteLink, backgroundImg, subtitle} = Astro.props
+---
+
+<!-- <div class=`bg-[url(./${backgroundImg}.png)] backgroundImage`> -->
+<div class=``>
+  
+
+
+  <span class="opacityLayer"></span>
+  <div class="text-white flex flex-col gap-4  z-50 fixed ml-24 bottom-56 ">
+    
+    
+    <h1 class="font-thin  text-3xl ">Dev - <span id="devName">{devName}</span> </h1>
+    <p class="text-5xl font-semibold ">Web <span  id="subtitle">{subtitle}</span>: </p>
+    <h2 class="text-6xl font-bold " id="websiteTitle">{websiteTitle}</h2>
+    <p class="text-2xl w-3/5" id="websiteDescription">{websiteDescription}</p>
+    <a href={websiteLink} id="websiteLink" class="bg-cyan-400 w-fit px-2 py-3 rounded-lg font-bold
+    hover:scale-110 transition-all   ">Ver pagina web</a>
+  </div>
+  
+</div>
+<style>
+  .backgroundImage{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+  
+  	.opacityLayer{
+		width: 100vw;
+		height: 100vh;
+    
+		background-color: rgba(0, 0, 0, 0.731);
+		z-index: 20;
+		position: fixed;
+	}
+</style>

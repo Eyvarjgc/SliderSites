@@ -1,0 +1,50 @@
+[
+
+  {
+    "ID": 1,
+    "devName": "Thesejo",
+    "subtitle": "para",
+    "websiteTitle": "Ofrecer servicios",
+    "websiteDescription": "pagina web desarrollada por thesejo utilizando Html, Css y Javascript",
+    "websiteLink": "https://ajedrezls.vercel.app/",
+    "backgroundImg": "services.png"
+  },
+  {
+    "ID": 2,
+    "devName": "Eyvarjgc",
+    "subtitle": "para",
+    "websiteTitle": "Negocio de piñatas",
+    "websiteDescription": "pagina web desarrollada por Eyvarjgc utilizando Astro, Javascript y Tailwind Css",
+    "websiteLink": "https://papel-crepe-web.vercel.app",
+    "backgroundImg": "pinata.png"
+  },
+  {
+    "ID": 3,
+    "devName": "Thesejo",
+    "subtitle": "para",
+    "websiteTitle": "Negocio de pasteleria",
+    "websiteDescription": "pagina web desarrollada por Thesejo utilizando Html, Css, Javascript",
+    "websiteLink": "https://ricossabores.vercel.app",
+    "backgroundImg": "Pasteleria.png"
+  },
+  {
+    "ID": 4,
+    "devName": "Eyvarjgc",
+    "subtitle": "sobre",
+    "websiteTitle": "Fan-made videojuego",
+    "websiteDescription": "pagina web desarrollada por Eyvarjgc utilizando Astro y Tailwind Css",
+    "websiteLink": "https://r6s-fan-made.vercel.app",
+    "backgroundImg": "r6s.png"
+  },
+ 
+  {
+    "ID": 5,
+    "devName": "Eyvarjgc",
+    "subtitle": "para",
+    "websiteTitle": "Listado de tareas",
+    "websiteDescription": "pagina web desarrollada por Eyvarjgc utilizando React y Tailwind Css",
+    "websiteLink": "https://todolist-7d9x.vercel.app",
+    "backgroundImg": "todo.png"
+  }
+ 
+]

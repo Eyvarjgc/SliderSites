@@ -1,0 +1,17 @@
+---
+import { useState } from 'astro:jsx';
+
+interface Props {
+  items: string[]; // Cambia `items` a un array de strings
+}
+
+const { items } = Astro.props;
+console.log(items.ID);
+
+---
+
+<div class="flex gap-8">
+  {items.map((item) => (
+    <img src={item.backgroundImg} alt="" class="rounded-3xl w-56" data-ID={item.ID} /> 
+  ))}
+</div>
